@@ -26,7 +26,7 @@ export default function Marcelo() {
     return (
         <section className=" flex flex-col md:flex-row gap-2 md:gap-8 h-screen">
             <div className="md:w-1/2 flex justify-center md:justify-end items-center">
-                <Image className='rounded-full h-56 w-56 object-cover drop-shadow-md' src={FotoMarcelo} alt='Foto do meu rosto' />
+                <Image className='rounded-full h-56 w-56 object-cover drop-shadow-md' priority src={FotoMarcelo} alt='Foto do meu rosto' />
             </div>
             <div className="md:w-1/2 flex justify-center md:justify-start items-center">
                 <div className='flex flex-col gap-3 items-center '>
@@ -42,8 +42,8 @@ export default function Marcelo() {
                     </div>
 
                     <div id='btnSocial' className='flex flex-row gap-2 justify-center'>
-                        <button><FaGithub /></button>
-                        <button><FaLinkedin /></button>
+                        <a target='_blank' href='https://github.com/marcelorc13'><FaGithub /></a>
+                        <a target='_blank' href='https://www.linkedin.com/in/marcelo-ramalho-ab9131276/'><FaLinkedin /></a>
                     </div>
                 </div>
 
