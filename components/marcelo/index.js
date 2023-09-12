@@ -1,4 +1,8 @@
+'use client'
+
 import './marcelo.css'
+
+import Link from 'next/link'
 
 import Image from 'next/image'
 import FotoMarcelo from '@/public/foto-marcelo.jpeg'
@@ -6,7 +10,19 @@ import FotoMarcelo from '@/public/foto-marcelo.jpeg'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 
+import '@/public/marcelo-cv.pdf'
+
 export default function Marcelo() {
+
+    function handleDownload() {
+        const arquivo = '/_next/static/files/marcelo-cv.pdf'
+
+        const link = document.createElement('a');
+        link.href = arquivo;
+        link.download = 'marcelo-cv.pdf';
+        link.click()    
+    }
+
     return (
         <section className=" flex flex-col md:flex-row gap-2 md:gap-8 h-screen">
             <div className="md:w-1/2 flex justify-center md:justify-end items-center">
@@ -21,8 +37,8 @@ export default function Marcelo() {
                     </div>
 
                     <div id='btnContact' className='flex flex-row gap-2 mt-2 justify-center'>
-                        <button className='bg-gray-900 text-white'>Baixar CV</button>
-                        <button className=''>Contato</button>
+                        <button onClick={handleDownload} className='bg-gray-900 text-white'>Baixar CV</button>
+                        <button className=''><a href='#contato'>Contato</a></button>
                     </div>
 
                     <div id='btnSocial' className='flex flex-row gap-2 justify-center'>

@@ -10,7 +10,6 @@ export default function Home() {
     <main className=''>
       <Header />
       <Marcelo />
-      <SobreMim />
     </main>
   )
 }
