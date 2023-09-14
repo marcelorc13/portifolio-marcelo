@@ -20,7 +20,7 @@ export default function Marcelo() {
         const link = document.createElement('a');
         link.href = arquivo;
         link.download = 'marcelo-cv.pdf';
-        link.click()    
+        link.click()
     }
 
     return (
@@ -42,8 +42,8 @@ export default function Marcelo() {
                     </div>
 
                     <div id='btnSocial' className='flex flex-row gap-2 justify-center'>
-                        <a target='_blank' href='https://github.com/marcelorc13'><FaGithub /></a>
-                        <a target='_blank' href='https://www.linkedin.com/in/marcelo-ramalho-ab9131276/'><FaLinkedin /></a>
+                        <Link target='_blank' href='https://github.com/marcelorc13'><FaGithub /></Link>
+                        <Link target='_blank' href='https://www.linkedin.com/in/marcelo-ramalho-ab9131276/'><FaLinkedin /></Link>
                     </div>
                 </div>
 

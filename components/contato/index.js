@@ -10,19 +10,20 @@ export default function Contato() {
         <section id="contato" className="h-screen flex flex-col gap-6 items-center justify-center w-full">
             <h1 className="text-5xl font-semibold">Contato:</h1>
             <div className='flex flex-col lg:flex-row gap-4'>
-                <div className='cardContato'>
-                    <FaMapLocationDot />
-                    <p className='cursor-default'>Maceió, AL</p>
-                </div>
 
                 <div className='cardContato'>
                     <AiOutlineMail />
-                    <p className='select-all'>marcelorcarnauba@gmail.com</p>
+                    <a target='_blank' href='mailto:marceloramalhocdev@gmail.com' className='select-all'>marceloramalhocdev@gmail.com</a>
                 </div>
 
                 <div className='cardContato'>
                     <AiFillLinkedin />
                     <a target='_blank' href='https://www.linkedin.com/in/marcelo-ramalho-ab9131276/'>LinkedIn</a>
+                </div>
+
+                <div className='cardContato'>
+                    <FaMapLocationDot />
+                    <p className='cursor-default'>Maceió, AL</p>
                 </div>
 
                 <div className='cardContato'>

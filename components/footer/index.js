@@ -1,26 +1,28 @@
 import './footer.css'
 
+import Link from 'next/link'
+
 export default function Footer() {
     return (
         <footer className="static bottom-0 left-0 right-0 flex flex-col items-center">
-            <ul id="listaFooter" className="flex flex-row justify-center items-center gap-8 text-xl py-8">
+            <ul id="listaFooter" className="flex flex-row justify-center items-center gap-8 md:text-xl py-8">
                 <li>
-                    <a href="#">Início</a>
+                    <Link href="#">Início</Link>
                 </li>
 
                 <li>
-                    <a href="#sobre-mim">Sobre Mim</a>
+                    <Link href="#sobre-mim">Sobre Mim</Link>
                 </li>
 
                 <li>
-                    <a href="#projetos">Projetos</a>
+                    <Link href="#projetos">Projetos</Link>
                 </li>
 
                 <li>
-                    <a href="#contato">Contato</a>
+                    <Link href="#contato">Contato</Link>
                 </li>
             </ul>
-            <p className='opacity-50 text-sm mb-4'>Copyright &#169; Marcelo Ramalho. Todos os direitos reservados </p>
+            <p className='opacity-50 text-sm mb-4 text-center px-4'>Copyright &#169; Marcelo Ramalho. Todos os direitos reservados </p>
         </footer>
     )
 }

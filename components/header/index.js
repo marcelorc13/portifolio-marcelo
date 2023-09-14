@@ -2,6 +2,8 @@
 
 import './header.css'
 
+import Link from 'next/link'
+
 import { AiOutlineMenu } from 'react-icons/ai'
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -23,20 +25,20 @@ export default function Header() {
     return (
         <nav className="top-0 right-0 left-0 flex flex-col md:flex-row justify-center md:justify-between md:px-20 lg:px-32 text-2xl items-center py-10 md:absolute relative">
             <div className="flex items-center">
-                <h1 className="text-3xl select-none font-semibold">Marcelo Ramalho</h1>
+                <h1 className="text-3xl select-none font-semibold">	&#60;marcelo.dev&#62;</h1>
             </div>
 
             <ul name='navegadores' className="mt-6 md:mt-0 gap-4 hidden flex-col md:flex md:flex-row md:gap-8 justify-center items-center">
                 <li>
-                    <a className='ancoras' href="#sobre-mim">Sobre Mim</a>
+                    <Link href='#sobre-mim' className='ancoras'>Sobre Mim</Link>
                 </li>
 
                 <li>
-                    <a className='ancoras' href="#projetos">Projetos</a>
+                    <Link href="#projetos" className='ancoras'>Projetos</Link>
                 </li>
 
                 <li>
-                    <a className='ancoras' href="#contato">Contato</a>
+                    <Link href="#contato" className='ancoras'>Contato</Link>
                 </li>
             </ul>
 
