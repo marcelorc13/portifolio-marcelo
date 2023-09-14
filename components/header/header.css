@@ -6,9 +6,9 @@
     @apply relative;
 }
 .ancoras::after {
-    @apply content-[''] absolute bg-gray-800 h-0.5 w-0 left-0 -bottom-1 rounded-full duration-500;
+    @apply content-[''] absolute bg-gray-800 h-0.5 w-0 left-0 -bottom-1 rounded-full opacity-0 duration-300;
 }
 
 .ancoras:hover::after {
-    @apply w-full;
+    @apply w-full opacity-100;
 }

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cardContato {
+    @apply border border-gray-900 rounded-3xl px-6 py-1 flex flex-row gap-2 items-center lg:justify-center text-4xl hover:bg-gray-900 hover:text-white transition duration-300 ;
+}
+
+.cardContato p, .cardContato a {
+    @apply text-xl;
+}

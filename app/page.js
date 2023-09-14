@@ -5,6 +5,7 @@ import Marcelo from '@/components/marcelo'
 import SobreMim from '@/components/sobreMim'
 import Projetos from '@/components/projetos'
 import Contato from '@/components/contato'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <Marcelo />
       <SobreMim />
       <Projetos />
+      <Contato />
+      <Footer />
     </main>
   )
 }

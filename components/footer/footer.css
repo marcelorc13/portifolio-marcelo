@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#listaFooter li a {
+    @apply relative;
+}
+#listaFooter li a::after {
+    @apply content-[''] absolute w-0 opacity-0 h-0.5 bg-gray-900 left-0 -bottom-0.5 rounded-full duration-300;
+}
+
+#listaFooter li a:hover::after {
+    @apply w-full opacity-100;
+}
